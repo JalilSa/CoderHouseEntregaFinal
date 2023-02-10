@@ -357,3 +357,32 @@ ul{position: fixed;
 }
 
   //*RESPONSIVE*********************************************************************************************************
+  
+  //*CHECK-OUT********************************************************************************************************
+  .container-checkout{
+    display: flex;
+    position: absolute; left: 20%; top: 25%;
+    aspect-ratio: 16/8;
+    width: 120vmin;
+    background-color: #ffffff;
+    border-radius: 2%;
+
+    .button-checkout{ 
+    max-height: 10vmin;
+    aspect-ratio: 2/1;
+    position: relative; left:140%; top: 83%;
+    justify-items: space-around;
+    justify-content: space-between;
+    }
+    .titulo-carrito{
+      justify-content: center;
+    }
+
+    .item-carrito-container{
+    display: grid;
+    grid-template-rows: 1 2 3;
+
+   }}
+  
+  
+  //*CHECK-OUT********************************************************************************************************/

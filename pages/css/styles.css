@@ -290,5 +290,31 @@ nav ul li #check {
     grid-template-columns: 1fr;
   }
 }
+.container-checkout {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  aspect-ratio: 16/8;
+  width: 120vmin;
+  background-color: #ffffff;
+  border-radius: 2%;
+}
+.container-checkout .button-checkout {
+  max-height: 10vmin;
+  aspect-ratio: 2/1;
+  position: relative;
+  left: 140%;
+  top: 83%;
+  justify-items: space-around;
+  justify-content: space-between;
+}
+.container-checkout .titulo-carrito {
+  justify-content: center;
+}
+.container-checkout .item-carrito-container {
+  display: grid;
+  grid-template-rows: 1 2 3;
+}
 
 /*# sourceMappingURL=styles.css.map */
