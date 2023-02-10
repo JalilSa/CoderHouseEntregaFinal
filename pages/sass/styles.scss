@@ -367,22 +367,32 @@ ul{position: fixed;
     background-color: #ffffff;
     border-radius: 2%;
 
-    .button-checkout{ 
-    max-height: 10vmin;
-    aspect-ratio: 2/1;
-    position: relative; left:140%; top: 83%;
-    justify-items: space-around;
-    justify-content: space-between;
-    }
     .titulo-carrito{
-      justify-content: center;
+
+      position: relative;left: 35%;
     }
+    .button-checkout{ 
+    position: relative; left:72%; 
+    justify-items: space-around;
+    }
+    
 
     .item-carrito-container{
     display: grid;
-    grid-template-rows: 1 2 3;
+    grid-template-rows: 1 3 2;
 
-   }}
+   }
+  .item-carrito{
+    padding: auto;
+    border-radius: 3%;
+    height: 8vmin;
+  }
+  .item-carrito{
+    text-transform:uppercase;
+  }
+
+  
+  }
   
   
   //*CHECK-OUT********************************************************************************************************/

@@ -300,21 +300,26 @@ nav ul li #check {
   background-color: #ffffff;
   border-radius: 2%;
 }
-.container-checkout .button-checkout {
-  max-height: 10vmin;
-  aspect-ratio: 2/1;
-  position: relative;
-  left: 140%;
-  top: 83%;
-  justify-items: space-around;
-  justify-content: space-between;
-}
 .container-checkout .titulo-carrito {
-  justify-content: center;
+  position: relative;
+  left: 35%;
+}
+.container-checkout .button-checkout {
+  position: relative;
+  left: 72%;
+  justify-items: space-around;
 }
 .container-checkout .item-carrito-container {
   display: grid;
-  grid-template-rows: 1 2 3;
+  grid-template-rows: 1 3 2;
+}
+.container-checkout .item-carrito {
+  padding: auto;
+  border-radius: 3%;
+  height: 8vmin;
+}
+.container-checkout .item-carrito {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */

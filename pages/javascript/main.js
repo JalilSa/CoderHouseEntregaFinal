@@ -1,8 +1,8 @@
 const track = document.getElementById("carousel");
 
 
-window.onmousedown = e =>{
+if( track!=null){ window.onmousedown = e =>{
     track.dataset.mouseDownat = e.clientX;
-    console.log("Funciona");
+    console.log("corre");
 }
-
+ }
