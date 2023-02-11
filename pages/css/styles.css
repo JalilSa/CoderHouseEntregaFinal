@@ -234,6 +234,10 @@ nav ul li #check {
   object-position: center;
 }
 
+.img-item:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 820px) {
   .categorias {
     grid-template-columns: 1fr 1fr;
