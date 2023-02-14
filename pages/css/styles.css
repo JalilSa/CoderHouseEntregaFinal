@@ -1,6 +1,6 @@
 footer {
   background-color: rgb(219, 217, 217);
-  height: 20px;
+  height: 10vh;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -10,6 +10,20 @@ footer {
 
 footer text {
   font-size: 10px;
+}
+footer text .boton-contacto {
+  height: 20px;
+  padding: 0px;
+}
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+main {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -96,12 +110,6 @@ nav ul li #check {
   margin: 10px;
 }
 
-.contacto {
-  background-color: rgba(155, 153, 153, 0.614);
-  margin-right: 50px;
-  border-radius: 5%;
-}
-
 .gran-contenedor-cartas {
   display: flex;
   justify-content: space-around;
@@ -111,8 +119,9 @@ nav ul li #check {
 .contenedor-cartas {
   position: absolute;
   display: grid;
-  margin-left: 45vh;
+  margin-left: 25vh;
   margin-top: 20vh;
+  justify-content: space-around;
 }
 .contenedor-cartas .img-tienda {
   position: absolute;
@@ -209,6 +218,9 @@ nav ul li #check {
 .storebtn {
   text-decoration: none;
   position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(0%, -50%);
   margin: 25% 0 0 47%;
   text-align: center;
   border: 1px solid #000;
@@ -238,60 +250,57 @@ nav ul li #check {
   cursor: pointer;
 }
 
-@media screen and (max-width: 820px) {
-  .categorias {
-    grid-template-columns: 1fr 1fr;
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+  nav .enlace {
+    scale: 0.9;
   }
-  .categoria {
-    padding: 10px;
+  nav .contenedor-cartas {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+    flex-direction: column;
+    margin: 0px 0px;
   }
-  .categoria svg {
-    width: 30px;
-    margin-right: 10px;
-    margin-bottom: 0;
-  }
-  .enlace {
-    padding: left 50px;
-  }
-  .nav ul li a {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 662px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgba(155, 153, 153, 0.944);
-    z-index: 4;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
+  nav ul {
+    display: flex;
+    gap: 1vmin;
   }
   nav ul li {
-    display: block;
-    margin: 50px 0px;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  nav ul li a :hover, nav ul li li a :active {
-    background: none;
-    color: black;
+    position: relative;
   }
 }
-@media screen and (max-width: 500px) {
-  .categorias {
-    grid-template-columns: 1fr;
+footer {
+  justify-content: space-between;
+  height: 5%;
+}
+footer .contacto {
+  margin-right: 5vmin;
+}
+
+.storebtn {
+  position: absolute;
+  left: 0%;
+  top: 20%;
+  transform: translate(0%, -50%);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  header .logo {
+    scale: 0.7;
+    position: relative;
+    left: -20%;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  header nav ul li {
+    scale: 0.9;
+  }
+  body .storebtn {
+    position: absolute;
+    left: -5%;
+  }
+  footer {
+    height: 15vmin;
   }
 }
 .container-checkout {
