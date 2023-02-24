@@ -24,6 +24,13 @@ body {
 main {
   overflow-y: hidden;
   overflow-x: hidden;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .faq {
+  justify-content: space-around;
 }
 
 body {
@@ -83,18 +90,63 @@ nav ul li #check {
   display: none;
 }
 
-.FAQ-container {
-  display: flex;
+.contenedor-principal-faq {
   position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 100vh;
-  aspect-ratio: 4.2/2;
-  border-radius: 2%;
-  background-color: white;
+  align-self: center;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
 }
-.FAQ-container .largo {
-  width: 100vh;
+.contenedor-principal-faq .contenedor-preguntas {
+  background-color: #f2f2f2;
+  height: 50vmin;
+  width: 100vmin;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.contenedor-principal-faq .contenedor-preguntas .contenedor-pregunta {
+  background-color: rgba(196, 196, 196, 0.5921568627);
+  display: flex;
+  flex-direction: column;
+  margin-left: 33%;
+  margin-top: 10%;
+  position: relative;
+  height: 10vmin;
+  width: 15vmin;
+  border-radius: 10%;
+}
+.contenedor-principal-faq .contenedor-pregunta:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: 0.5s ease all;
+}
+
+.svgfaq {
+  scale: 0.7;
+  justify-self: center;
+}
+
+.textofaq {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor-respuestas {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.contenedor-respuestas .contenedor-respuesta {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.contenedor-respuestas .displaynone {
+  display: none;
 }
 
 .faqbotones {
