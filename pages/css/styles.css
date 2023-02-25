@@ -162,14 +162,6 @@ nav ul li #check {
   margin: 10px;
 }
 
-.gran-contenedor-cartas {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  position: relative;
-  left: -20%;
-}
-
 .contenedor-cartas {
   position: relative;
   margin-left: 25vh;
@@ -177,7 +169,7 @@ nav ul li #check {
 }
 .contenedor-cartas .img-tienda {
   position: absolute;
-  display: gird;
+  display: grid;
   border-radius: 10%;
 }
 .contenedor-cartas .img-tienda-g {
@@ -302,17 +294,45 @@ nav ul li #check {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 765px) {
+  .gran-contenedor-cartas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+    left: -20%;
+  }
+}
+@media only screen and (max-width: 764px) {
+  .gran-contenedor-cartas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    margin-top: -20vmin;
+  }
+  .contenedor-cartas {
+    padding-top: 100px;
+  }
+  .contenedor-cartas .img-tienda-s {
+    left: 0%;
+    top: 90%;
+  }
+}
 @media only screen and (min-width: 446px) {
   .inicio {
     display: none;
   }
+  .contenedor-cartas {
+    transform: translateX(-50%);
+  }
 }
-@media only screen and (min-width: 500px) and (max-width: 1498px) {
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
   .container-checkout {
     width: 60vmin;
   }
 }
-@media only screen and (min-width: 1499px) {
+@media only screen and (min-width: 1001px) {
   .container-checkout {
     width: 120vmin;
     aspect-ratio: 16/8;
