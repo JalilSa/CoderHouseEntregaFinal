@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<meta name="description" content="Haz tu compra de forma segura y fácil en nuestra página de check out. Envío rápido y garantía de devolución de dinero.">
+    <script src="javascript/carrito.js"></script>
+    <meta name="description" content="Haz tu compra de forma segura y fácil en nuestra página de check out. Envío rápido y garantía de devolución de dinero.">
   </head>
 <header>
   <nav>
@@ -50,29 +51,37 @@
 </header>
   <body>
 
+<Div class="container-checkout" id="carrito-main">
+<div class="topcard-container">
+<button class="btn btn-carrito"><strong> Carrito</strong> </button>
+<button class="btn btn-carrito" id="guardados" ><strong> Guardados</strong> </button>
+</div>
+<div class="textocarrito">
+  <h1 class="titulocarrito">Tu carrito esta vacio!!</h1>
+  <h2 class="subtitulocarrito">No sabes que comprar? <br> hechale un vistazo a nuestros productos!</h2>
+</div>
+<a href="tienda.html"><button class="boton-tienda-carrito btn btn-primary">Visita la Tienda!</button></a>
 
-<!-- <Div class="container-checkout">
-  <div class="checkoutcard">
-    <button class="btn-carrito btn btn-primary">Pagar!</button>
-  </div>
- <div class="item-carrito">
-  <img src="imagenes/cuchillo 1.jpg" class="img-item-carrito" draggable="false" alt="Ejemplo de un producto">
- </div>
- <div class="item-carrito">
-  <img src="imagenes/cuchillo 1.jpg" class="img-item-carrito" draggable="false" alt="Ejemplo de un producto">
- </div>
- <div class="item-carrito">
-  <img src="imagenes/cuchillo 1.jpg" class="img-item-carrito" draggable="false" alt="Ejemplo de un producto">
- </div>
- <div class="item-carrito">
-  <img src="imagenes/cuchillo 1.jpg" class="img-item-carrito" draggable="false" alt="Ejemplo de un producto">
- </div> -->
+</Div>
 
+<Div class="container-checkout displaynone" id="guardados-main">
+<div class="topcard-container">
+<button class="btn btn-carrito" id="carrito"><strong> Carrito</strong> </button>
+<button class="btn btn-carrito" ><strong> Guardados</strong> </button>
+</div>
+<div class="textocarrito">
+  <h1 class="titulocarrito">No tienes ningun producto guardado!!</h1>
+  <h2 class="subtitulocarrito">No sabes que comprar? <br> hechale un vistazo a nuestros productos!</h2>
+</div>
+<a href="tienda.html"><button class="boton-tienda-carrito btn btn-primary">Visita la Tienda!</button></a>
 
 </Div>
     
 
   </body>
+
+
+
   <footer><h6 class="licencia">Licencia: Lorem ipsum dolor sit amet.</h6>
     <Div class="dropdown contacto">
         <a class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
