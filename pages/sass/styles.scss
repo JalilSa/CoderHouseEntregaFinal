@@ -113,7 +113,11 @@ nav {
   display: flex;
   flex-direction: column;
 
-
+.titulofaq{
+  display: flex;
+  justify-self:flex-start;
+  transform: translateX(60%);
+}
 
  
 
@@ -430,7 +434,10 @@ width: 100%;
     width:60vmin;
     aspect-ratio: 9/7;
   }
-
+  .storebtn {
+    display: flex;
+    justify-self: center;
+    }
 }
 
 footer {
@@ -439,15 +446,24 @@ footer {
   .contacto {
     margin-right: 5vmin;
   }
+
 }
 
-.storebtn {
-  position: absolute;
-  left: -0%;
-  top: 20%;
-  transform: translate(0%, -50%);
-}
 
+@media only screen and (min-width: 600px) and (max-width: 800px) { 
+  .storebtn {
+    display: flex;
+    justify-self: center;
+    margin-top: 50%;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) { 
+  .storebtn {
+    display: flex;
+    justify-self: center;
+    margin-top: 70%;
+    }
+}
 @media only screen and (min-width: 446px) and (max-width: 500px) {
   header {
 
@@ -482,12 +498,13 @@ footer {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 445px){
+@media only screen and (max-width: 445px){
 .enlace{
   display: none;
 
 }
 
+.textofaq{display: none;}
 
 nav{
   li{scale: 0.7;}
