@@ -302,9 +302,26 @@ nav ul li #check {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 700px) {
+@media only screen and (min-width: 446px) {
+  .inicio {
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1498px) {
+  .container-checkout {
+    width: 60vmin;
+  }
+}
+@media only screen and (min-width: 1499px) {
+  .container-checkout {
+    width: 120vmin;
+    aspect-ratio: 16/8;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
   nav .enlace {
     scale: 0.9;
+    transform: translateX(-20%);
   }
   nav .contenedor-cartas {
     display: flex;
@@ -317,6 +334,10 @@ nav ul li #check {
   }
   nav ul li {
     position: relative;
+  }
+  .container-checkout {
+    width: 60vmin;
+    aspect-ratio: 9/7;
   }
 }
 footer {
@@ -334,18 +355,17 @@ footer .contacto {
   transform: translate(0%, -50%);
 }
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
-  header .logo {
+@media only screen and (min-width: 446px) and (max-width: 500px) {
+  header .enlace {
     scale: 0.7;
-    position: relative;
-    left: -20%;
+    transform: translateX(-30%);
   }
   header nav ul {
     display: flex;
     justify-content: space-around;
   }
   header nav ul li {
-    scale: 0.9;
+    scale: 0.8;
   }
   body .storebtn {
     position: absolute;
@@ -353,6 +373,18 @@ footer .contacto {
   }
   footer {
     height: 15vmin;
+  }
+  .container-checkout {
+    width: 60vmin;
+    aspect-ratio: 9/7;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 445px) {
+  .enlace {
+    display: none;
+  }
+  nav li {
+    scale: 0.7;
   }
 }
 .container-checkout {
@@ -362,8 +394,6 @@ footer .contacto {
   position: absolute;
   left: 20%;
   top: 25%;
-  aspect-ratio: 16/8;
-  width: 120vmin;
   background-color: #ffffff;
   border-radius: 2%;
 }
