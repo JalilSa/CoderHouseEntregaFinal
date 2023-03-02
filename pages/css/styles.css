@@ -280,23 +280,55 @@ nav ul li #check {
   z-index: 1;
 }
 
-.carousel {
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
+@media only screen and (min-width: 500px) {
+  .carousel {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .carousel img {
+    width: 46vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+  }
+  .img-item:hover {
+    cursor: pointer;
+  }
 }
-.carousel img {
-  width: 46vmin;
-  height: 56vmin;
-  object-fit: cover;
-  object-position: center;
-}
-
 .img-item:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .carousel img {
+    width: 30vmin;
+    height: 30vmin;
+    object-fit: cover;
+    object-position: center;
+  }
+  .img-item:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.5s;
+  }
+}
+.img-item:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.5s;
 }
 
 @media only screen and (min-width: 765px) {
@@ -355,7 +387,8 @@ nav ul li #check {
   }
   nav ul {
     display: flex;
-    gap: 1vmin;
+    gap: 0vmin;
+    flex-direction: row;
   }
   nav ul li {
     position: relative;

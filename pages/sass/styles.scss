@@ -332,24 +332,58 @@ width: 100%;
   color: black;
   z-index: 1;
 }
-
-.carousel {
-  display: flex;
-  gap: 4vmin;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  img {
-    width: 46vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: center;
+@media only screen and (min-width: 500px){
+  .carousel {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    img {
+      width: 46vmin;
+      height: 56vmin;
+      object-fit: cover;
+      object-position: center;
+    }
   }
-}
+  
+  .img-item:hover {
+    cursor: pointer;
+  }
+   }
 
 .img-item:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 500px){
+  .carousel {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    img {
+      width: 30vmin;
+      height: 30vmin;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  
+  .img-item:hover {
+    cursor: pointer;
+    scale:1.1;
+    transition: all 0.5s;
+  }
+   }
+
+.img-item:hover {
+  cursor: pointer;
+  scale:1.1;
+  transition: all 0.5s;
 }
 //TIENDA**************************************************************************************************************
 
@@ -424,7 +458,8 @@ width: 100%;
 
     ul {
       display: flex;
-      gap: 1vmin;
+      gap: 0vmin;
+      flex-direction: row;
       li {
         position: relative;
       }
