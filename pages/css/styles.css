@@ -282,6 +282,7 @@ nav ul li #check {
 
 @media only screen and (min-width: 500px) {
   .carousel {
+    z-index: -1;
     display: flex;
     gap: 4vmin;
     position: absolute;
@@ -297,21 +298,20 @@ nav ul li #check {
   }
   .img-item:hover {
     cursor: pointer;
+    scale: 1.1;
+    transition: all 0.5s;
   }
 }
-.img-item:hover {
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 500px) {
   .carousel {
+    z-index: -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4vmin;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
   }
   .carousel img {
     width: 30vmin;
@@ -325,12 +325,6 @@ nav ul li #check {
     transition: all 0.5s;
   }
 }
-.img-item:hover {
-  cursor: pointer;
-  scale: 1.1;
-  transition: all 0.5s;
-}
-
 @media only screen and (min-width: 765px) {
   .gran-contenedor-cartas {
     display: flex;
@@ -432,6 +426,7 @@ footer .contacto {
   header nav ul {
     display: flex;
     justify-content: space-around;
+    gap: 2px;
   }
   header nav ul li {
     scale: 0.8;
@@ -455,8 +450,14 @@ footer .contacto {
   .textofaq {
     display: none;
   }
-  nav li {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
     scale: 0.7;
+    display: flex;
+    gap: 1px;
+    transform: translateX(0%);
   }
 }
 .container-checkout {

@@ -334,6 +334,7 @@ width: 100%;
 }
 @media only screen and (min-width: 500px){
   .carousel {
+    z-index: -1;
     display: flex;
     gap: 4vmin;
     position: absolute;
@@ -350,21 +351,22 @@ width: 100%;
   
   .img-item:hover {
     cursor: pointer;
+    scale:1.1;
+    transition: all 0.5s;
   }
    }
 
-.img-item:hover {
-  cursor: pointer;
-}
+
 @media only screen and (max-width: 500px){
   .carousel {
+    z-index: -1;
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 4vmin;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
     img {
       width: 30vmin;
       height: 30vmin;
@@ -380,11 +382,7 @@ width: 100%;
   }
    }
 
-.img-item:hover {
-  cursor: pointer;
-  scale:1.1;
-  transition: all 0.5s;
-}
+
 //TIENDA**************************************************************************************************************
 
 //*RESPONSIVE*********************************************************************************************************
@@ -510,6 +508,7 @@ footer {
       ul {
         display: flex;
         justify-content: space-around;
+        gap: 2px;
         li {
           scale: 0.8;
         }
@@ -542,7 +541,15 @@ footer {
 .textofaq{display: none;}
 
 nav{
-  li{scale: 0.7;}
+  ul{display: flex;
+    li{scale: 0.7;
+      display: flex;
+      gap: 1px;
+      
+    transform: translateX(0%);
+    }
+  }
+
 }
 
 }
