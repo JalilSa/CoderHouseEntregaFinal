@@ -340,7 +340,7 @@ nav ul li #check {
     justify-content: space-around;
     flex-direction: column;
     position: relative;
-    margin-top: -20vmin;
+    margin-top: -40vmin;
   }
   .contenedor-cartas {
     padding-top: 100px;
